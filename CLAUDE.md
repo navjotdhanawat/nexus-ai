@@ -2,7 +2,7 @@
 
 ## Overview
 
-AI Playground is a native desktop AI chat application built with Tauri v2 + React 19. It supports multiple LLM providers (Google Gemini, OpenAI, Groq) with MCP tool integration and multimodal capabilities.
+Nexus is a native desktop AI chat application built with Tauri v2 + React 19. It supports multiple LLM providers (Google Gemini, OpenAI, Groq) with MCP tool integration and multimodal capabilities.
 
 ## Quick Context
 

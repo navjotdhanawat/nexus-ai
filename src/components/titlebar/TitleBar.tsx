@@ -16,7 +16,7 @@ interface TitleBarProps {
   title?: string
 }
 
-export function TitleBar({ className, title = 'AI Playground' }: TitleBarProps) {
+export function TitleBar({ className, title = 'Nexus' }: TitleBarProps) {
   const {
     leftSidebarVisible,
     rightSidebarVisible,

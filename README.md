@@ -1,4 +1,4 @@
-# AI Playground
+# Nexus
 
 A native desktop AI chat application with multi-provider support and MCP integration. Built with Tauri v2, React 19, and TypeScript.
 
@@ -42,8 +42,8 @@ A native desktop AI chat application with multi-provider support and MCP integra
 
 ```bash
 # Clone the repository
-git clone https://github.com/navjotdhanawat/ai-playground.git
-cd ai-playground
+git clone https://github.com/navjotdhanawat/nexus.git
+cd nexus
 
 # Install dependencies
 npm install

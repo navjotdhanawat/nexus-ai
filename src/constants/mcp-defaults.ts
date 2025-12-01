@@ -23,7 +23,7 @@ export type MCPServerId = (typeof MCP_SERVER_IDS)[keyof typeof MCP_SERVER_IDS]
 export const MCP_PROTOCOL_VERSION = '2024-11-05'
 
 export const MCP_CLIENT_INFO = {
-  name: 'ai-playground',
+  name: 'nexus',
   version: '0.1.0-beta.1',
 } as const
 

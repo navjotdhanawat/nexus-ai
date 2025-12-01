@@ -112,7 +112,7 @@ export const AdvancedPane: React.FC = () => {
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = `ai-playground-backup-${new Date().toISOString().split('T')[0]}.json`
+    a.download = `nexus-backup-${new Date().toISOString().split('T')[0]}.json`
     a.click()
     URL.revokeObjectURL(url)
     toast.success('Data exported successfully')
@@ -187,7 +187,7 @@ export const AdvancedPane: React.FC = () => {
               AI
             </div>
             <div>
-              <h4 className="font-semibold">AI Playground</h4>
+              <h4 className="font-semibold">Nexus</h4>
               <p className="text-sm text-muted-foreground">
                 Version 0.1.0-beta.1
               </p>
@@ -205,7 +205,7 @@ export const AdvancedPane: React.FC = () => {
           <div className="flex gap-2">
             <Button variant="outline" size="sm" asChild>
               <a
-                href="https://github.com/navjotdhanawat/ai-playground"
+                href="https://github.com/navjotdhanawat/nexus"
                 target="_blank"
                 rel="noopener noreferrer"
               >

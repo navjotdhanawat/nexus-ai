@@ -393,7 +393,11 @@ async fn spawn_mcp_server(
     state: State<'_, McpProcesses>,
     config: McpServerConfig,
 ) -> Result<u32, String> {
-    log::info!("Spawning MCP server: {} with command: {}", config.id, config.command);
+    log::info!(
+        "Spawning MCP server: {} with command: {}",
+        config.id,
+        config.command
+    );
 
     // Build the shell command to run
     // Use login shell to get the user's PATH
@@ -551,8 +555,8 @@ fn create_app_menu(app: &mut tauri::App) -> Result<(), Box<dyn std::error::Error
     log::info!("Setting up native menu system");
 
     // Build the main application submenu
-    let app_submenu = SubmenuBuilder::new(app, "AI Playground")
-        .item(&MenuItemBuilder::with_id("about", "About AI Playground").build(app)?)
+    let app_submenu = SubmenuBuilder::new(app, "Nexus")
+        .item(&MenuItemBuilder::with_id("about", "About Nexus").build(app)?)
         .separator()
         .item(&MenuItemBuilder::with_id("check-updates", "Check for Updates...").build(app)?)
         .separator()
@@ -562,11 +566,11 @@ fn create_app_menu(app: &mut tauri::App) -> Result<(), Box<dyn std::error::Error
                 .build(app)?,
         )
         .separator()
-        .item(&PredefinedMenuItem::hide(app, Some("Hide AI Playground"))?)
+        .item(&PredefinedMenuItem::hide(app, Some("Hide Nexus"))?)
         .item(&PredefinedMenuItem::hide_others(app, None)?)
         .item(&PredefinedMenuItem::show_all(app, None)?)
         .separator()
-        .item(&PredefinedMenuItem::quit(app, Some("Quit AI Playground"))?)
+        .item(&PredefinedMenuItem::quit(app, Some("Quit Nexus"))?)
         .build()?;
 
     // Build the Edit submenu (required for copy/paste shortcuts on macOS)
