@@ -9,17 +9,7 @@ A native desktop AI chat application with multi-provider support and MCP integra
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="docs/screens/screen-1.png" alt="Nexus Chat Interface" width="49%" />
-  <img src="docs/screens/screen-2.png" alt="Multi-Provider Support" width="49%" />
-</div>
-
-<div align="center">
-  <img src="docs/screens/screen-3.png" alt="MCP Integration" width="49%" />
-  <img src="docs/screens/screen-4.png" alt="Preferences" width="49%" />
-</div>
-
-<div align="center">
-  <img src="docs/screens/screen-5.png" alt="Command Palette" width="80%" />
+  <img src="docs/screens/screen.png" alt="Command Palette" width="80%" />
 </div>
 
 ## ✨ Features
