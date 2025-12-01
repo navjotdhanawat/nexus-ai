@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "AI Playground",
+  "version": "0.1.0-beta.1",
+  "identifier": "com.navjotdhanawat.ai-playground",
+  "build": {
+    "removeUnusedCommands": true,
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "AI Playground",
+        "width": 800,
+        "height": 600,
+        "minWidth": 1000,
+        "minHeight": 700,
+        "resizable": true,
+        "fullscreen": false,
+        "maximized": false,
+        "center": true,
+        "decorations": false,
+        "alwaysOnTop": false,
+        "transparent": true,
+        "shadow": true,
+        "dragDropEnabled": true,
+        "windowEffects": {
+          "effects": [
+            "hudWindow"
+          ],
+          "radius": 12.0,
+          "state": "active"
+        }
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "macOSPrivateApi": true
+  },
+  "bundle": {
+    "createUpdaterArtifacts": true,
+    "active": true,
+    "targets": [
+      "app",
+      "dmg"
+    ],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns"
+    ],
+    "publisher": "Navjot Dhanawat",
+    "category": "DeveloperTool",
+    "shortDescription": "Native desktop AI chat with multi-provider support",
+    "longDescription": "AI Playground is a native desktop application for chatting with multiple AI providers including Google Gemini, OpenAI, and Groq. Features MCP tool integration, multimodal support (vision, audio, image generation), conversation history, and a beautiful modern interface.",
+    "copyright": "Copyright © 2025 Navjot Dhanawat. All rights reserved.",
+    "macOS": {
+      "frameworks": [],
+      "minimumSystemVersion": "10.15",
+      "signingIdentity": "-",
+      "providerShortName": null,
+      "entitlements": null,
+      "exceptionDomain": ""
+    }
+  },
+  "plugins": {
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://github.com/navjotdhanawat/ai-playground/releases/latest/download/latest.json"
+      ],
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDk5QTI5MDZEQjk5RkJERTAKUldUZ3ZaKzViWkNpbVVDdllOZWp6d1VVZThkWHIrMGNkWEExY3BhdW53VlFhQ1BmSUVpRWNMWGkK"
+    },
+    "shell": {
+      "open": true
+    }
+  }
+}
