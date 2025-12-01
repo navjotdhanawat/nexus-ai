@@ -42,7 +42,7 @@
     "macOSPrivateApi": true
   },
   "bundle": {
-    "createUpdaterArtifacts": true,
+    "createUpdaterArtifacts": false,
     "active": true,
     "targets": [
       "app",
@@ -70,7 +70,7 @@
   },
   "plugins": {
     "updater": {
-      "active": true,
+      "active": false,
       "endpoints": [
         "https://github.com/navjotdhanawat/nexus/releases/latest/download/latest.json"
       ],
